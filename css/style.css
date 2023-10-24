@@ -92,6 +92,7 @@ button,select{
     text-transform:none
 }
 button,html input[type="button"],input[type="reset"],input[type="submit"]{
+    appearance: auto;
     -webkit-appearance:button;
     cursor:pointer
 }
@@ -114,6 +115,7 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
     height:auto
 }
 input[type="search"]{
+    appearance: auto;
     -webkit-appearance:textfield;
     -moz-box-sizing:content-box;
     box-sizing:content-box
@@ -1297,6 +1299,7 @@ textarea.form-control{
     height:auto
 }
 input[type="search"]{
+    appearance: auto;
     -webkit-appearance:none
 }
 input[type="date"]{
