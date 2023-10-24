@@ -1,0 +1,125 @@
+/* Reset some default browser styles */
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+
+/* Set up the body */
+body {
+    line-height: 1;
+    font-size: 16px; /* Base font-size for ease of readability */
+    font-family: Arial, sans-serif; /* Simple, standard font */
+    color: #333; /* Dark color for regular text */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Set up the container or any wrapping div you might use for centering */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clearfix for inner floated elements */
+}
+
+/* Header and navigation styles */
+header {
+    background: #333; /* Dark background */
+    color: #ffffff; /* Light text */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #bbb 1px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; /* Capitalize all letters */
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Styling for dropdown links */
+header nav ul li ul li{
+    display: none; /* Hide dropdown items by default */
+}
+
+header nav ul li:hover ul li{
+    display: block; /* Show dropdown items on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: #4CAF50; /* Mild green background */
+    color: white;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+/* Main content */
+main {
+    margin: 15px 0;
+}
+
+main h2, main h3, main h4 {
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Dark background similar to the header for symmetry */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add responsiveness */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    .container {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav li {
+        padding: 15px 0;
+    }
+}

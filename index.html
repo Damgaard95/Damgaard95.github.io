@@ -1,98 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <!-- Basic meta tags for SEO and responsive design -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Asger Damgaard Christensen, showcasing my professional journey and projects.">
+    <title>Asger Damgaard Christensen - Portfolio</title>
 
-<title>Damgaard95</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon-16x16.PNG" type="image/png">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Additional considerations for head section could still be applied here, as mentioned in the initial proposal. -->
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+<!-- Header Section -->
+<header>
+    <nav>
+        <!-- Navigation Menu -->
+        <ul>
+            <!-- Assuming a standard navigation bar; you might be using a different structure or classes/IDs for styling. -->
+            <li><a href="#about">About Me</a></li>
+            <!-- Projects Dropdown -->
+            <li>
+                Projects <!-- This can be styled as a dropdown menu -->
+                <ul>
+                    <!-- List of projects; you can add as many as needed -->
+                    <li><a href="projects/project1.html">Project 1</a></li>
+                    <!-- Add more projects in a similar manner below -->
+                    <!--
+                    <li><a href="projects/project2.html">Project 2</a></li>
+                    <li><a href="projects/project3.html">Project 3</a></li>
+                    -->
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li> <!-- This can link to a section in your page or a different contact page -->
+        </ul>
+    </nav>
 
-<div id="main">
-  <h2>Sidenav Push Example</h2>
-  <p>Test3: Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-</div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- Content as per the initial proposal -->
+    </div>
+</header>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+<!-- Main Content Section -->
+<main>
+    <!-- About Section -->
+    <section id="about">
+        <!-- Content as per the initial proposal -->
+    </section>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
-</script>
-   
+    <!-- Skills Section -->
+    <section id="skills">
+        <!-- Content as per the initial proposal -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <!-- Content as per the initial proposal -->
+    </section>
+
+    <!-- Other sections as per the initial proposal -->
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <div class="contact-info">
+        <!-- Content as per the initial proposal -->
+    </div>
+
+    <div class="social-links">
+        <!-- Content as per the initial proposal -->
+    </div>
+</footer>
+
+<!-- External JS -->
+<script src="js/main.js"></script>
+
 </body>
-</html> 
+</html>
